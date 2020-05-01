@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>left.svg</file>
+    <file>right.svg</file>
+    <file>icon.png</file>
+    <file>calendar.svg</file>
+  </qresource>
+</RCC>

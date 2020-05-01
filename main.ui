@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit_4">
+         <property name="styleSheet">
+          <string notr="true">
+QDateEdit
+{border-radius: 4px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    width:130px;
+    height:23px;
+   
+	color: rgb(127, 127, 127);
+	border-color: rgb(135, 207, 255);
+    spacing: 5px; 
+}
+
+QDateEdit::drop-down {  
+image: url(:/newPrefix/calendar.svg);
+    width:25px;
+    height:23px;
+subcontrol-position: right top;
+    subcontrol-origin:margin;
+     background-color:  rgb(135, 207, 255);
+    border-style: solid;
+    border-width: 1px;
+ border-radius: 1px;
+   spacing: 5px; 
+
+}
+
+QCalendarWidget QWidget{
+background-color:  rgb(135, 207, 255);
+color: white;
+
+}
+
+QCalendarWidget QToolButton{
+background-color:  rgb(135, 207, 255);
+color: white;
+icon-size: 20px;
+
+  	font-size: 11px;
+}
+
+QCalendarWidget QMenu{
+background-color: rgb(96, 175, 204);
+color: white;
+
+
+}
+
+  /* header row */
+ QCalendarWidget QWidget {alternate-background-color: rgb(250, 250, 250);  }
+
+/*normmal days*/
+  QCalendarWidget QAbstractItemView:enabled 
+  {
+	color: rgb(115, 115, 115);
+
+  }
+
+QCalendarWidget QAbstractItemView:disabled{
+	color: rgb(200, 200, 200);
+}
+
+QCalendarWidget QMenu{
+background-color:  rgb(135, 207, 255);
+}
+
+QCalendarWidget QSpinBox{
+ background-color:  rgb(135, 207, 255);
+}
+
+
+QCalendarWidget QTableView{
+background-color: rgb(250, 250, 250);
+selection-background-color:  rgb(135, 207, 255);
+
+font-size: 12px;
+
+}
+
+#qt_calendar_prevmonth {
+  
+    icon-size: 15px;
+    qproperty-icon: url(:/newPrefix/left.svg);
+
+}
+#qt_calendar_nextmonth {
+    
+    icon-size: 15px;
+    qproperty-icon:   url(:/newPrefix/right.svg);
+}
+</string>
+         </property>
+         <property name="displayFormat">
+          <string>yyyy-MM-dd</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="reources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
